@@ -1,0 +1,3 @@
+<view class="m-title">
+<slot></slot>
+</view>

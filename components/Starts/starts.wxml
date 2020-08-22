@@ -1,0 +1,10 @@
+<view class="start">
+	<block wx:for="{{startList}}" wx:key="index">
+		<!-- 选中 -->
+		<image class="image" mode="widthFix" wx:if="{{item == 1}}" src="https://s1.ax1x.com/2020/08/18/du14tP.png"></image>
+		<!-- 半颗星 -->
+		<image class="image" mode="widthFix" wx:elif="{{item == 2}}" src="https://s1.ax1x.com/2020/08/18/du12md.png"></image>
+		<!-- 未选中 -->
+		<image class="image" mode="widthFix" wx:elif="{{item == 0}}" src="https://s1.ax1x.com/2020/08/18/du15ff.png"></image>
+	</block>
+</view>

@@ -1,0 +1,39 @@
+<view class="user_mian">
+	<view class="user_item" bindtap="reg">
+		<view class="item_text">
+			<button open-type="getUserInfo">登录</button>
+		</view>
+		<view class="icon">
+		</view>
+	</view>
+	<view class="user_item">
+		<view class="item_text">
+			我的订单
+		</view>
+		<view class="icon">
+		</view>
+	</view>
+	<view class="user_item">
+		<view class="item_text">
+			优惠卷
+		</view>
+		<view class="icon">
+		</view>
+	</view>
+	<view class="user_item">
+		<view class="item_text">
+			影院会员卡
+		</view>
+	</view>
+	<view class="user_item item_m">
+		<view class="item_text">
+			想看的电影
+		</view>
+	</view>
+	<view class="user_item">
+		<view class="item_text">
+			看过的电影
+		</view>
+	</view>
+	<button class="btn" bind:tap="loginOut">退出登录</button>
+</view>

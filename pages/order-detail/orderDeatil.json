@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "title_text":"../../components/Title_text/title_text"
+  },
+  "navigationBarTitleText": "影院"
+}

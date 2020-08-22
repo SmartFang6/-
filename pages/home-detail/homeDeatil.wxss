@@ -1,0 +1,63 @@
+.detail {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  padding: 20rpx 26rpx;
+  background: url(' https://s1.ax1x.com/2020/07/13/UJWq54.jpg');
+}
+
+.imgs {
+  width: 35%;
+  margin-right: 20rpx;
+}
+
+.imgs image {
+  width: 100%;
+}
+
+.rightText {
+  color: white;
+  font-size: 32rpx;
+}
+
+.rightText .h2 {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.rightText .point {
+  margin: 12rpx 0;
+}
+
+.rightText .point text {
+  color: coral;
+}
+.point_start{
+  margin-top: 8rpx;
+}
+.info {
+  text-indent: 48rpx;
+  padding: 14rpx;
+  line-height: 1.7;
+  margin-bottom: 200rpx;
+}
+.buy{
+  width: 100vw;
+}
+.buy .buyButton{
+  width: 100%;
+  background-color: #009cdc;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.actors{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

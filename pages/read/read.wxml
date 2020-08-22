@@ -1,0 +1,3 @@
+<view bind:tap="chooseBook">选择书籍</view>
+<text>{{books[0].name}}</text>
+<view>{{txt}}</view>

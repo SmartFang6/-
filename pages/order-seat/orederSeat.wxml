@@ -1,0 +1,42 @@
+<view>
+  <view class="seat-title">
+    <view class="h2">{{name}}</view>
+    <view class="h4">{{m}}月{{d}}日 {{seatData.Time}} 国语 {{seatData.RoomType}}</view>
+    <view class="title_bg">
+      <text>{{seatData.Room}}</text>
+    </view>
+  </view>
+  <view class="centent seat">
+    <view class="seat-detail">
+      <view
+        wx:for="{{seatarr}}"
+        wx:key="index"
+        class="seat-item {{item.status}}"
+        bindtap="checkseat"
+        data-index="{{item.id}}"
+      ></view>
+    </view>
+    <view class="tips-seat">
+      <view>
+        <image src="https://s1.ax1x.com/2020/07/14/UU74UA.png" mode="widthFix"></image> 可选
+      </view>
+      <view>
+        <image src="https://s1.ax1x.com/2020/07/14/UUHhsU.png" mode="widthFix"></image> 已选
+      </view>
+      <view>
+        <image src="https://s1.ax1x.com/2020/07/16/UBub5T.png" mode="widthFix"></image> 已售
+      </view>
+    </view>
+    <view class="ticket">
+      <view class="h3">已选座位</view>
+      <view class="ticket-item" wx:for="{{checkedSeat}}" wx:key="id" bindtap="del" data-index="{{index}}" data-id="{{item.id}}">
+      {{item.row}}排{{item.col}}座
+      <view>￥{{seatData.Price}}</view>
+      <text>x</text>
+      </view>
+    </view>
+  </view>
+  <view class="buy">
+    <button class="seat-bar" bindtap="checkedSeats" type="primary">￥{{orderPrice}}确认选座</button>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+.user_mian {
+    margin-top: 26rpx;
+}
+
+.user_mian .user_item {
+    display: flex;
+    align-items: center;
+    height: 100rpx;
+    border-bottom: 1rpx solid #eee;
+    padding: 10rpx;
+    background: #fff url("https://s1.ax1x.com/2020/07/03/NX5VgI.png") no-repeat 700rpx center;
+    background-size: 20rpx 30rpx;
+}
+.user_mian .user_item button{
+    background:#fff;
+    font-size:38rpx;
+    font-weight:normal;
+    padding:0;
+    text-align:left;
+    height:100%;
+}
+
+.item_m {
+    margin-top: 26rpx;
+}
+.btn{
+    height: 100rpx;
+    line-height: 100rpx;
+    background-color: #076FA2;
+    margin-top: 20rpx;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: content-box;
+    padding: 0;
+    color: #fff;
+    font-weight: normal;
+}

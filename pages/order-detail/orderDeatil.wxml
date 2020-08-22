@@ -1,0 +1,21 @@
+<wxs module="tools">
+  function subStr(val, start, stop) {
+     if (val) { return val.substring(start, stop) } else {
+  return '' } 
+  }
+  module.exports.subStr = subStr;
+</wxs>
+<view>
+  <title_text><text>{{name}}</text><text class="rate">{{rate}}分</text></title_text>
+  <view class="content">
+    <view class="scene-item" wx:for="{{dataList}}" wx:key="TimeID">
+      <view class="c-time">{{tools.subStr(item.Time,0,5)}}</view>
+      <view class="c-type">国语{{item.RoomType}}<text>{{item.Room}}</text></view>
+      <view class="c-price">￥{{item.Price}}</view>
+      <view class="c-btn">
+        <button class="buy" bindtap="toSeat" data-id="{{item.TimeID}}">选择购票</button>
+      </view>
+    </view>
+  </view>
+</view>
+

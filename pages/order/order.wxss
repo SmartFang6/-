@@ -1,0 +1,39 @@
+/* pages/order/order.wxss */
+/* .toread {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  padding: 10rpx;
+  border: 1px solid #000;
+  width: 120rpx;
+} */
+.centent{
+  width: 100vw;
+}
+.order-item {
+  margin: 10px 0;
+  background: #fff;
+}
+.order_top{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+  /* flex-direction: row; */
+}
+.order_txt view {
+  line-height: 2;
+  width: calc(100vw - 136px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.order_top image{
+  width: 136rpx;
+  margin-right: 20rpx;
+}
+.status {
+  height: 68rpx;
+  line-height: 68rpx;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}

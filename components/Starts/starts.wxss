@@ -1,0 +1,9 @@
+/* components/Starts/starts.wxss */
+.start{
+  display: flex;
+  flex-direction: row;
+}
+.start .image{
+  width: 36rpx;
+  height: 36rpx;
+}

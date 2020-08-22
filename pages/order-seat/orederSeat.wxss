@@ -1,0 +1,115 @@
+page{
+}
+.seat-title{
+  background: #fff;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #d8e7ef;
+  position: relative;
+}
+.seat-title .h2{
+  font-size: 36rpx;
+  margin-bottom: 10rpx;
+  color: #076FA2;
+  font-weight: bold;
+}
+.seat-title .h4{
+  font-size: 32rpx;
+  color: #888;  
+}
+.seat-title .title_bg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -52rpx;
+  width: 380rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: auto;
+  background: url("https://s1.ax1x.com/2020/07/14/UUf3QJ.png") no-repeat center center;
+  background-size: 80%;
+  text-align: center;
+  font-size: 30rpx;
+
+}
+.title_bg text{
+    /* margin-top: 12rpx; */
+    color: #D8E7EF;
+}
+.centent{
+  padding-top: 74rpx;
+  background: rgb(237, 237, 237);
+}
+
+.seat-detail{
+  padding: 0 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.seat-detail>view{
+  width: 14%;
+  height: 40rpx;
+  background: url(https://s1.ax1x.com/2020/07/14/UU74UA.png) no-repeat center center;
+  background-size: 52rpx 40rpx;
+  margin: 10rpx 0;
+}
+.seat-detail .active{
+  background: url(https://s1.ax1x.com/2020/07/14/UUHhsU.png) no-repeat center center;
+  background-size: 52rpx 40rpx;
+}
+.seat-detail .active-selled{
+  background: url(https://s1.ax1x.com/2020/07/16/UBub5T.png) no-repeat center center;
+  background-size: 52rpx 40rpx;
+}
+.tips-seat{
+  display: flex;
+  margin-top: 15rpx;
+  background-color: #fff;
+  padding: 17rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+.tips-seat>view{
+  flex: 1;
+  text-align: center;
+}
+.tips-seat>view image{
+  width: 56rpx;
+  height: 38rpx;
+  vertical-align: middle;
+}
+.ticket{
+  background-color: #fff;
+  padding: 20rpx 10rpx;
+  height: 160rpx;
+}
+.ticket .h3{
+  font-size: 28rpx;
+  padding: 10rpx 0;
+}
+.ticket-item{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  background: url("https://s1.ax1x.com/2020/07/16/UBQn4f.png") no-repeat center center;
+  background-size:160rpx 80rpx;
+  margin: 10rpx;
+  width: 160rpx;
+  height: 84rpx;
+}
+.ticket-item>view{
+  color: #f90;
+}
+.ticket text{
+  position: absolute;
+  right: 10rpx;
+  top: 20rpx;
+  color: #ccc;
+}
+.buy{
+  width: 100vw;
+}
+.buy .seat-bar{
+  width: 100%;
+  background-color: #009cdc;
+  border-radius: 0;
+}

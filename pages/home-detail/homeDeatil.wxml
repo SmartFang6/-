@@ -1,0 +1,35 @@
+<view class="detail">
+	<view class="banner">
+		<view class="imgs">
+			<image src="{{img}}{{detailData.ImgUrl}}" mode="widthFix"> </image>
+		</view>
+		<view class="rightText">
+			<view class="h2">
+				{{detailData.Name}}
+			</view>
+			<view class="star-level">
+				<view class="point">
+					评分：<text>{{detailData.Rate}}分</text>
+					<view class="point_start">
+						<y-starts startList="{{startList}}" />
+					</view>
+				</view>
+			</view>
+			<view>
+				{{detailData.Type}}
+			</view>
+			<view class="actors">
+				{{detailData.Actors}}
+			</view>
+			<view>
+				上映时间：{{detailData.ReleaseTime}}
+			</view>
+		</view>
+	</view>
+	<view class="info">
+		{{detailData.Intro}}
+	</view>
+	<view class="buy">
+		<button class="buyButton" bindtap="toBuy" type="primary">购票</button>
+	</view>
+</view>

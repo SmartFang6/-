@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <title_text><text>影片</text></title_text>
+  <view class="content">
+    <navigator
+      class="list_item"
+      data-item="{{item}}"
+      bindtap="toDeatil"
+      hover-class="navigator-hover"
+      open-type="navigate"
+      wx:for="{{movieList}}"
+      data-MovieID="{{item.MovieID}}"
+      wx:key="MovieID"
+    >
+    <view class="item_img" >
+      <image src="{{img}}{{item.ImgUrl}}" mode="widthFix">
+      </image>
+    </view>
+      <view class="item_text">
+        <view class="h2">
+          {{item.Name}}
+        </view>
+        <view class="movie-type">
+          <text>2D</text>
+          <text>IMAX</text>
+        </view>
+        <view>
+          主演：{{item.Actors}}
+        </view>
+        <view>
+          {{item.Type}}
+        </view>
+      </view>
+      <view class="grades_buy">
+        <view class="grades">
+          {{item.Rate}}分
+        </view>
+        <view class="buy">
+          <navigator url="" open-type="navigate">
+            购票
+          </navigator>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
